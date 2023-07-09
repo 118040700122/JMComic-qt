@@ -3,6 +3,7 @@ import re
 from bs4 import BeautifulSoup
 
 from config import config
+from tools.log import Log
 
 
 class BookWebApi:
@@ -25,7 +26,7 @@ class BookWebApi:
         if len(data) <= 30:
             isSuc = False
             msg = data
-
+        Log.Info("sONBONddze:{}, url:{}". mo))
         return isSuc, msg
 
     @staticmethod
