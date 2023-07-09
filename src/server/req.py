@@ -6,6 +6,7 @@ import time
 from config import config
 from config.setting import Setting
 from tools.tool import ToolUtil
+from tools.log import Log
 from Cryptodome.Cipher import AES
 
 
@@ -188,6 +189,8 @@ class LoginReq2(ServerReq):
         data["username"] = userId
         data["password"] = passwd
         data["key"] = "0b931a6f4b5ccc3f8d870839d07ae7b2"
+        Log.Info("userId:{}, url:{}". userId)
+        Log.Info("passwd:{}, url:{}". passwd)
         data["view_mode_debug"] = "1"
         data["view_mode"] = "null"
         super(self.__class__, self).__init__(url, ToolUtil.DictToUrl(data), method)
