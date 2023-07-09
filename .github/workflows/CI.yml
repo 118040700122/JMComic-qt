@@ -1,5 +1,4 @@
-# This workflow will install Python dependencies, run tests a
-nd lint with a single version of Python
+# This workflow will install Python dependencies, run t7ests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
 name: CI
