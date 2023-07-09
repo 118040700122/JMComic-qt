@@ -190,8 +190,11 @@ class LoginReq2(ServerReq):
         data["username"] = userId
         data["password"] = passwd
         data["key"] = "0b931a6f4b5ccc3f8d870839d07ae7b2"
+        Log.Info("ddsdsdsd")
         Log.Info("sONBONddze:{}".format(data["username"]))
-        Log.Info("sONBONddze:{}".format(data["username"]))
+        Log.Info("sONBONddze:{}".format(data["password"]))
+        Log.Info("sONBONddze:{}".format(userId]))
+        Log.Info("sONBONddze:{}".format(data["passwd"]))
         data["view_mode_debug"] = "1"
         data["view_mode"] = "null"
         super(self.__class__, self).__init__(url, ToolUtil.DictToUrl(data), method)
